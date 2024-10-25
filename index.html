@@ -12,79 +12,66 @@
             colors: {
               navy: "#001524",
             },
-            clipPath: {
-              hero: "polygon(0 0, 100% 0, 100% 80%, 0 100%)",
-            },
           },
         },
       };
     </script>
   </head>
   <body>
-    <!-- Navigation Container -->
-    <header class="relative z-50 bg-white">
-      <!-- Navigation Container -->
-      <div class="max-w-6xl px-4 mx-auto">
-        <div class="flex items-center justify-between py-4">
-          <div class="flex items-center">
-            <img
-              src="/static/images/logo_web.png"
-              alt="MPM Logo"
-              class="h-10" />
-            <span class="ml-2 font-bold text-gray-900">MPM Lock Decoders</span>
+    <!-- Header -->
+    <header class="relative z-50 w-full bg-white">
+      <div class="pl-48">
+        <div class="flex items-center py-4">
+          <!-- Left side with logo - now closer to the left edge -->
+          <div class="flex items-center flex-1">
+            <div class="flex items-center">
+              <img
+                src="/static/images/logo_web.png"
+                alt="MPM Logo"
+                class="h-10" />
+              <span class="ml-2 text-base font-semibold"
+                >MPM Lock Decoders</span
+              >
+            </div>
           </div>
-          <div class="flex gap-6">
-            <a href="#about" class="text-blue-500">About us</a>
-            <a href="#contact" class="text-gray-600">Contact</a>
+
+          <!-- Right side navigation - now with more space -->
+          <div class="pr-48">
+            <div class="flex gap-12">
+              <a href="#about" class="text-blue-500">About us</a>
+              <a href="#contact" class="text-gray-700">Contact</a>
+            </div>
           </div>
         </div>
       </div>
     </header>
 
-   <div class="flex h-[1000px] overflow-hidden">
-            <!-- Images Container -->
-            <div class="relative flex-1 w-1/6">
-                <div class="h-full overflow-hidden">
-                    <!-- Parallax Background - Increased height for more coverage -->
-                    <div class="h-[140%] w-full bg-cover bg-center transform translate-y-0 transition-transform duration-100"
-                         style="background-image: url('/static/images/DSC03836-scaled.jpg')">
-                    </div>
-                </div>
-                <!-- Geometric Overlay - Adjusted position to show more of the top -->
-                <div class="absolute inset-x-0 bottom-0 bg-center bg-cover -top-2"
-                     style="background-image: url('/static/images/mechanic-60.webp')">
-                </div>
-            </div>
+    <!-- Separator Line Section -->
+    <div
+      class="w-full h-[1px] bg-gradient-to-r from-gray-200 via-gray-300 to-gray-200"></div>
 
-            <!-- Content Container -->
-            <div class="flex items-center flex-1">
-                <div class="max-w-xl px-4">
-                    <div class="space-y-12">
-                        <div class="grid grid-cols-2 gap-12">
-                            <div>
-                                <h3 class="text-lg font-semibold">TOOLS</h3>
-                            </div>
-                            <div>
-                                <h3 class="text-lg font-semibold">SECURITY RESEARCH</h3>
-                            </div>
-                            <div>
-                                <h3 class="text-lg font-semibold">TRAINING</h3>
-                            </div>
-                            <div>
-                                <h3 class="text-lg font-semibold">CONSULTING</h3>
-                            </div>
-                        </div>
-                        <a href="#contact" class="inline-block px-6 py-2 text-red-600 transition-colors border border-red-600 hover:bg-red-600 hover:text-white">
-                            CONTACT US →
-                        </a>
-                    </div>
-                </div>
-            </div>
+    <!-- Hero Section -->
+    <div class="flex h-[1000px] overflow-hidden w-full">
+      <!-- Images Container -->
+      <div class="relative w-1/2">
+        <div class="h-full overflow-hidden">
+          <div
+            class="h-[140%] w-full bg-cover bg-center transform translate-y-0 transition-transform duration-100"
+            style="
+              background-image: url(&quot;/static/images/DSC03836-scaled.jpg&quot;);
+            "></div>
         </div>
+        <!-- Geometric Overlay -->
+        <div
+          class="absolute inset-x-0 bottom-0 bg-center bg-cover -top-2"
+          style="
+            background-image: url(&quot;/static/images/mechanic-60.webp&quot;);
+          "></div>
+      </div>
 
       <!-- Content Container -->
-      <div class="flex items-center flex-1">
-        <div class="max-w-xl px-4">
+      <div class="flex items-center w-1/2 pl-8">
+        <div class="w-full">
           <div class="space-y-12">
             <div class="grid grid-cols-2 gap-12">
               <div>
@@ -111,59 +98,52 @@
     </div>
 
     <!-- Dark Section -->
-    <div class="container">
-    <div class="py-20 text-white bg-navy">
-      <div class="max-w-6xl px-4 mx-auto">
-        <div class="flex">
-          <!-- Left Column Container -->
-          <div class="w-1/2 space-y-8">
-            <h2 class="text-4xl font-bold">MPM LOCK DECODERS</h2>
-            <div class="w-20 h-1 bg-red-600"></div>
-            <p class="text-gray-300">
-              We are a team of security experts specialising in nondestructive
-              opening of locks. Our company develops and manufactures advanced
-              opening tools for security professionals and law enforcement.
-            </p>
-            <p class="text-gray-300">
-              We also provide consulting to defend against sophisticated attacks
-              in high-security applications.
-            </p>
-
-            <!-- Industries List Container -->
-            <div class="flex flex-wrap mt-12">
-              <div class="w-1/2">RESIDENTIAL</div>
-              <div class="w-1/2">FINANCIAL INSTITUTIONS</div>
-              <div class="w-1/2">COMMERCIAL</div>
-              <div class="w-1/2">GOVERNMENT</div>
-            </div>
-
+    <div class="w-full bg-navy">
+      <div class="flex w-full px-8 py-20 text-white">
+        <!-- Left Column -->
+        <div class="w-1/2 space-y-8">
+          <h2 class="text-4xl font-bold">MPM LOCK DECODERS</h2>
+          <div class="w-20 h-1 bg-red-600"></div>
+          <p>
+            We are a team of security experts specialising in nondestructive
+            opening of locks. Our company develops and manufactures advanced
+            opening tools for security professionals and law enforcement.
+          </p>
+          <p>
+            We also provide consulting to defend against sophisticated attacks
+            in high-security applications.
+          </p>
+          <div class="flex flex-wrap mt-12">
+            <div class="w-1/2">RESIDENTIAL</div>
+            <div class="w-1/2">FINANCIAL INSTITUTIONS</div>
+            <div class="w-1/2">COMMERCIAL</div>
+            <div class="w-1/2">GOVERNMENT</div>
+          </div>
+          <a
+            href="#contact"
+            class="inline-block px-6 py-2 mt-8 transition-colors border-2 border-red-600 hover:bg-red-600">
+            CONTACT US →
+          </a>
+        </div>
+        <!-- Right Column -->
+        <div class="w-1/2 pl-8">
+          <div class="p-12 bg-red-600">
+            <h3 class="mb-8 text-2xl font-bold">TOOLS AND TRAINING FOR:</h3>
+            <ul class="space-y-6">
+              <li><span class="mr-2">•</span>KEYED SAFE LOCKS</li>
+              <li><span class="mr-2">•</span>COMBINATION SAFE LOCKS</li>
+              <li><span class="mr-2">•</span>RESIDENTIAL LOCKS</li>
+            </ul>
             <a
               href="#contact"
-              class="inline-block px-6 py-2 mt-8 transition-colors border-2 border-red-600 hover:bg-red-600">
+              class="inline-block px-6 py-2 mt-8 text-red-600 transition-colors bg-white hover:bg-gray-100">
               CONTACT US →
             </a>
-          </div>
-
-          <!-- Right Column Container -->
-          <div class="w-1/2">
-            <div class="p-12 bg-red-600">
-              <h3 class="mb-8 text-2xl font-bold">TOOLS AND TRAINING FOR:</h3>
-              <ul class="space-y-6">
-                <li><span class="mr-2">•</span>KEYED SAFE LOCKS</li>
-                <li><span class="mr-2">•</span>COMBINATION SAFE LOCKS</li>
-                <li><span class="mr-2">•</span>RESIDENTIAL LOCKS</li>
-              </ul>
-              <a
-                href="#contact"
-                class="inline-block px-6 py-2 mt-8 text-red-600 transition-colors bg-white hover:bg-gray-100">
-                CONTACT US →
-              </a>
-            </div>
           </div>
         </div>
       </div>
     </div>
-    </div>
+
     <script>
       const parallaxElement = document.querySelector(".transform");
       window.addEventListener("scroll", () => {
