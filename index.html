@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MPM Lock Decoders</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
     <script>
       tailwind.config = {
         theme: {
@@ -71,19 +72,23 @@
 
       <!-- Content Container -->
       <div class="flex items-center w-1/2 pl-8">
-        <div class="w-full">
+        <div class="flex flex-col items-center justify-center w-full">
           <div class="space-y-12">
             <div class="grid grid-cols-2 gap-12">
               <div>
+                <i data-lucide="settings" class="w-8 h-8 text-red-600"></i>
                 <h3 class="text-lg font-semibold">TOOLS</h3>
               </div>
               <div>
+                <i data-lucide="text-search" class="w-8 h-8 text-red-600"></i>
                 <h3 class="text-lg font-semibold">SECURITY RESEARCH</h3>
               </div>
               <div>
+                <i data-lucide="lock-keyhole-open" class="w-8 h-8 text-red-600"></i>
                 <h3 class="text-lg font-semibold">TRAINING</h3>
               </div>
               <div>
+                <i data-lucide="shield-ban" class="w-8 h-8 text-red-600"></i>
                 <h3 class="text-lg font-semibold">CONSULTING</h3>
               </div>
             </div>
@@ -114,10 +119,22 @@
             in high-security applications.
           </p>
           <div class="flex flex-wrap mt-12">
-            <div class="w-1/2">RESIDENTIAL</div>
-            <div class="w-1/2">FINANCIAL INSTITUTIONS</div>
-            <div class="w-1/2">COMMERCIAL</div>
-            <div class="w-1/2">GOVERNMENT</div>
+            <div class="flex items-center w-1/2">
+              <i data-lucide="home" class="w-6 h-6 mr-2 text-red-600"></i>
+              RESIDENTIAL
+            </div>
+            <div class="flex items-center w-1/2">
+              <i data-lucide="dollar-sign" class="w-6 h-6 mr-2 text-red-600"></i>
+              FINANCIAL INSTITUTIONS
+            </div>
+            <div class="flex items-center w-1/2">
+              <i data-lucide="briefcase" class="w-6 h-6 mr-2 text-red-600"></i>
+              COMMERCIAL
+            </div>
+            <div class="flex items-center w-1/2">
+              <i data-lucide="castle" class="w-6 h-6 mr-2 text-red-600"></i>
+              GOVERNMENT
+            </div>
           </div>
           <a
             href="#contact"
@@ -173,6 +190,7 @@
         const scrolled = window.pageYOffset;
         parallaxElement.style.transform = `translateY(${scrolled * 0.5}px)`;
       });
+      lucide.createIcons();
     </script>
   </body>
 </html>
