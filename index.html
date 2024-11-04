@@ -33,9 +33,12 @@
 
         <div class="flex items-center lg:order-2">
 
-          <a href="#"
-            class="text-white bg-red-600 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0  focus:outline-none">Contact
-            us</a>
+          <a class="inline-flex items-center justify-center w-full px-2 py-1 font-medium text-center text-white duration-200 bg-red-600 focus:outline-none rounded-xl focus-visible:outline-black lg:w-auto focus-visible:ring-black hover:bg-rose-100 hover:text-rose-500"
+            href="#">Contact us&nbsp;&nbsp;
+            <span class="text-2xl font-bold">
+              →
+            </span>
+          </a>
 
         </div>
       </div>
@@ -95,140 +98,121 @@
 
 
   <!-- Dark Section -->
-  <section class="flex flex-col w-full bg-navy">
-    <div class="flex flex-col w-full px-8 py-20 text-white md:flex-row">
-      <!-- Left Column -->
-      <div class="w-full md:w-1/2">
-        <h2 class="pb-4 text-4xl font-bold">MPM LOCK DECODERS</h2>
-        <div class="w-20 h-1 bg-red-600 "></div>
-        <p class="pt-4">
-          We are a team of security experts specialising in nondestructive
-          opening of locks. Our company develops and manufactures advanced
-          opening tools for security professionals and law enforcement.
-        </p>
-        <p>
-          We also provide consulting to defend against sophisticated attacks
-          in high-security applications.
-        </p>
-        <div class="grid grid-cols-2 gap-4 mt-12">
-          <div class="flex justify-center">
-            <i data-lucide="home" class="w-6 h-6 mr-2 text-red-600"></i>
-            RESIDENTIAL
-          </div>
-          <div class="flex justify-center">
-            <i data-lucide="dollar-sign" class="w-6 h-6 mr-2 text-red-600"></i>
-            FINANCIAL INSTITUTIONS
-          </div>
-          <div class="flex justify-center">
-            <i data-lucide="briefcase" class="w-6 h-6 mr-2 text-red-600"></i>
-            COMMERCIAL
-          </div>
-          <div class="flex justify-center">
-            <i data-lucide="castle" class="w-6 h-6 mr-2 text-red-600"></i>
-            GOVERNMENT
-          </div>
+  <section class="flex flex-col w-full px-8 py-20 text-white bg-navy md:flex-row">
+    <!-- Left Column with info -->
+    <div class="flex-1 w-full md:w-1/2">
+      <h2 class="pb-4 text-4xl font-bold">MPM LOCK DECODERS</h2>
+      <div class="w-20 h-1 bg-red-600 "></div>
+      <p class="pt-4">
+        We are a team of security experts specialising in nondestructive
+        opening of locks. Our company develops and manufactures advanced
+        opening tools for security professionals and law enforcement.
+      </p>
+      <p>
+        We also provide consulting to defend against sophisticated attacks
+        in high-security applications.
+      </p>
+      <div class="grid grid-cols-2 gap-4 mt-12">
+        <div class="flex justify-center">
+          <i data-lucide="home" class="w-6 h-6 mr-2 text-red-600"></i>
+          RESIDENTIAL
         </div>
-      </div>
-      <!-- Right Column -->
-      <div class="w-full mt-8 md:w-1/2 md:pl-8 md:mt-0">
-        <div class="relative p-12 overflow-hidden bg-red-600">
-          <!-- Background image container with overlay -->
-          <div class="absolute inset-0 bg-center bg-cover opacity-20" style="
-                background-image: url('static/images/IMG_3771-scaled.jpg');
-              "></div>
-          <!-- Content with relative positioning to appear above the background -->
-          <div class="relative z-10">
-            <h3 class="mb-8 text-2xl font-bold text-white">
-              TOOLS AND TRAINING FOR:
-            </h3>
-            <ul class="space-y-4 text-white">
-              <li class="flex items-center">
-                <span class="mr-2">•</span>
-                KEYED SAFE LOCKS
-              </li>
-              <li class="flex items-center">
-                <span class="mr-2">•</span>
-                COMBINATION SAFE LOCKS
-              </li>
-              <li class="flex items-center">
-                <span class="mr-2">•</span>
-                RESIDENTIAL LOCKS
-              </li>
-            </ul>
-          </div>
+        <div class="flex justify-center">
+          <i data-lucide="dollar-sign" class="w-6 h-6 mr-2 text-red-600"></i>
+          FINANCIAL INSTITUTIONS
+        </div>
+        <div class="flex justify-center">
+          <i data-lucide="briefcase" class="w-6 h-6 mr-2 text-red-600"></i>
+          COMMERCIAL
+        </div>
+        <div class="flex justify-center">
+          <i data-lucide="castle" class="w-6 h-6 mr-2 text-red-600"></i>
+          GOVERNMENT
         </div>
       </div>
     </div>
-    <div class="flex justify-center">
-      <a href="#"
-        class="text-white bg-red-600 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0  focus:outline-none">Contact
-        us</a>
+    <!-- Right Column with image -->
+    <div class="flex flex-1 w-full mt-8 md:w-1/2 md:pl-8 md:mt-0">
+      <div class="relative flex items-stretch flex-1 h-full p-12 overflow-hidden bg-red-600">
+        <!-- Background image container with overlay -->
+        <div class="absolute inset-0 bg-center bg-cover opacity-20"
+          style="background-image: url('static/images/IMG_3771-scaled.jpg');"></div>
+        <!-- Empty div to contribute to height -->
+        <div class="w-full"></div>
+      </div>
     </div>
   </section>
 
   <!-- Light Section -->
-  <section class="flex flex-col w-full">
-  <div class="flex flex-col w-full px-8 py-20 text-white md:flex-row">
-    <!-- Right Column -->
-    <div class="w-full mt-8 md:w-1/2 md:pl-8 md:mt-0">
-      <div class="relative p-12 overflow-hidden bg-red-600">
+  <section class="flex flex-col w-full px-8 py-20 md:flex-row">
+    <!-- Left Column with image -->
+    <div class="flex flex-1 w-full mt-8 md:w-1/2 md:mt-0">
+      <div class="relative flex items-stretch flex-1 h-full p-12 overflow-hidden bg-red-600">
         <!-- Background image container with overlay -->
-        <div class="absolute inset-0 bg-center bg-cover opacity-20" style="
-          background-image: url('static/images/training-session.jpg');
-          "></div>
-        <!-- Content with relative positioning to appear above the background -->
-        <div class="relative z-10">
-          <h3 class="mb-8 text-2xl font-bold text-white">
-            TRAINING PROGRAMS FOR:
-          </h3>
-          <ul class="space-y-4 text-white">
-            <li class="flex items-center">
-              <span class="mr-2">•</span>
-              LOCKSMITHS
-            </li>
-            <li class="flex items-center">
-              <span class="mr-2">•</span>
-              SECURITY PROFESSIONALS
-            </li>
-            <li class="flex items-center">
-              <span class="mr-2">•</span>
-              LAW ENFORCEMENT
-            </li>
-          </ul>
-        </div>
+        <div class="absolute inset-0 bg-center bg-cover opacity-20"
+          style="background-image: url('static/images/teaching.jpg');"></div>
+        <!-- Empty div to contribute to height -->
+        <div class="w-full"></div>
       </div>
     </div>
-    <!-- Left Column -->
-    <div class="w-full md:w-1/2"></div>
-      <h2 class="pb-4 text-4xl font-bold">TRAINING</h2>
-      <div class="w-20 h-1 bg-red-600"></div>
-      <p class="pt-4"></p>
-        Our training programs are designed to equip security professionals with the skills needed to handle advanced lock systems. We offer hands-on training sessions and workshops.
+    <!-- Right Column with info -->
+    <div class="flex-1 w-full md:w-1/2 md:pl-8">
+      <h2 class="pb-4 text-4xl font-bold">TOOLS AND TRAINING</h2>
+      <div class="w-20 h-1 bg-red-600 "></div>
+      <p class="pt-4">
+        Gain practical skills in lock operations, lock security, and safe mechanisms.
+        Our expert-led training covers essential techniques for locksmiths and security professionals,
+        focusing on real-world applications and troubleshooting.
+        Perfect for enhancing your expertise in securing a variety of locking systems.
+        Join us to elevate your security skills!
       </p>
       <p>
-        Learn from industry experts and gain practical experience in nondestructive lock opening techniques.
+        We provide consulting, tools and trainings for:
       </p>
       <div class="grid grid-cols-2 gap-4 mt-12">
-        <div class="flex justify-center"></div>
-          <i data-lucide="tool" class="w-6 h-6 mr-2 text-red-600"></i>
-          PRACTICAL SESSIONS
-        </div>
-        <div class="flex justify-center"></div>
-          <i data-lucide="book-open" class="w-6 h-6 mr-2 text-red-600"></i>
-          THEORY CLASSES
+        <div class="flex justify-center">
+          <i data-lucide="lock-keyhole" class="w-6 h-6 mr-2 text-red-600"></i>
+          KEYED SAFE LOCKS
         </div>
         <div class="flex justify-center">
-          <i data-lucide="users" class="w-6 h-6 mr-2 text-red-600"></i>
-          GROUP WORKSHOPS
+          <i data-lucide="disc" class="w-6 h-6 mr-2 text-red-600"></i>
+          COMBINATION SAFE LOCKS
         </div>
-        <div class="flex justify-center"></div>
-          <i data-lucide="award" class="w-6 h-6 mr-2 text-red-600"></i>
-          CERTIFICATION
+        <div class="flex justify-center col-span-2">
+          <i data-lucide="house" class="w-6 h-6 mr-2 text-red-600"></i>
+          RESIDENTIAL LOCKS
         </div>
       </div>
     </div>
-  </div>
   </section>
+
+  <!-- Call to action -->
+  <section class="items-center w-full px-8 py-20 text-white bg-navy">
+    <div class="relative items-center">
+      <div class="justify-between w-full lg:inline-flex lg:items-center">
+        <div class="max-w-xl">
+          <span class="text-sm font-semibold tracking-widest uppercase">Contact us</span>
+          <p class="mt-8 text-4xl font-extrabold tracking-tight">Learn more and get in touch</p>
+        </div>
+        <div class="flex flex-col mt-12 lg:ml-auto sm:flex-row">
+          <a class="inline-flex items-center justify-center w-full px-6 py-3 font-medium text-center text-white duration-200 bg-red-600 focus:outline-none rounded-xl focus-visible:outline-black lg:w-auto focus-visible:ring-black hover:bg-rose-100 hover:text-rose-500"
+            href="#">Contact us &nbsp;&nbsp;
+            <span class="text-2xl font-bold">
+              →
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="py-4 ">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2024 MPM Lock Decoders s.r.o. All rights reserved.</p>
+    </div>
+  </footer>
+
 
   <script>
     // Icons used on the page
